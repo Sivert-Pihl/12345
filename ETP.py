@@ -64,7 +64,7 @@ df_daily_max = df_hour.resample('D').max()
 
 # Compute daily ETo
 station = pm.Station(latitude=55.5866692, altitude=12) # Tylstrup DMI station
-station.anemometer_height = 42
+station.anemometer_height = 10
 
 for date in df_daily_mean.index:
     datetime.strftime(date, '%Y-%m-%d')
